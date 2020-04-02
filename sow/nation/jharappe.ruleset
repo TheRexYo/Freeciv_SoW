@@ -1,0 +1,49 @@
+[nation_jharappe]
+
+name=_("Jharappe")
+plural=_("?plural:Jharapp")
+groups="Ancient", "Extended"
+legend=_("During its time, Jharappe nation was the largest nation\
+ on the Ahrian subcontinent. It was surprisingly accepting of other\
+ races, as it had learned the secrets of writing from the Nagai, who\
+ happened to live in the same region. The Jharapp were known to have\
+ been highly advanced for their time, playing a key role in world trade\
+ due to their extensive achievements. Despite all their successes, the\
+ Jharappe nation fell due to unknown reasons, and it would be thousands\
+ of years before some of their more advanced discoveries would be reinvented.\
+")
+
+leaders = {
+ "name",                "sex"
+ "Jhr Ahdrali",         "Male"
+ "Tei Eliha",           "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",      "female_title"
+ "Anarchy",         _("Shyk %s"),      _("?female:Shyk %s"); "Hunter"
+ "Despotism",       _("Roj %s"),       _("Raj %s"); "Lord / Lady"
+ "Monarchy",        _("Rjo %s"),       _("Rja %s"); "King / Queen"
+ "Fundamentalism",  _("Phujo %s"),     _("?female:Phuja %s"); "Priest / Priestess"
+ "Republic",        _("Parduvu %s"),   _("Parduva %s"); "Provider"
+}
+
+flag="indoeuropean"
+flag_alt = "egypt"
+style = "Babylonian"
+
+init_techs="Pottery", "Alphabet", "Ceremonial Burial", "Bronze Working", "Masonry", "Animal Husbandry", "Magic", "Warrior Code"
+init_buildings=""
+init_units=""
+
+civilwar_nations=""
+
+trait_expansionist = 60
+trait_trader       = 60
+trait_aggressive   = 30
+
+cities =
+ "Mijanho-deru",
+ "Jharappa",
+ "Zihan-de",
+ "Talanazza"

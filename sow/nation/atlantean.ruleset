@@ -1,0 +1,55 @@
+[nation_atlantean]
+
+name=_("Atlantean")
+plural=_("?plural:Atlanteans")
+groups="Ancient", "Erath", "Core"
+legend=_("The origins of the Atlanteans remain shrouded in mystery.\
+ It is known that its first members fled the surface of the earth upon\
+ the collapse of the Neph empire, retreating deep into oceans in an\
+ attempt to escape their enemies. Every few decades, it is said they\
+ would return to the surface to wage war against coastal nations, whom\
+ they viewed as a threat to their society. Eventually, the Atlantean rulers\
+ grew greedy, and decided to take control of the land as well. However, many\
+ tribal citizens did not agree with this, and the empire became embroiled in\
+ civil war. Ultimately, two distinct Atlantean nations emerged from the conflict,\
+ each with their own views on the surface world and who it belongs to.\
+\n* Can build Temple Aquae, which upon construction gives them a Leviathan - the\
+ best sea unit in the game.\
+")
+
+
+leaders = {
+ "name",                        "sex"
+ "Atlantix Eyrin",              "Male"
+ "Ta'skala Thalor",             "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Chief %s"),      _("?female:Chief %s")
+ "Despotism",       _("King %s"),         _("Queen %s")
+ "Fundamentalism",  _("High-Priest %s"),         _("?female:High-Priestess %s")
+ "Republic",        _("Champion %s"), _("Champion %s")
+}
+
+flag="england"
+flag_alt = "united_kingdom"
+style = "European"
+
+init_techs="Seafaring"
+init_buildings=""
+init_units=""
+civilwar_nations = ""
+
+trait_expansionist = 25
+trait_trader       = 0
+trait_aggressive   = 25
+
+cities =
+ "Atlan",
+ "Oceanis",
+ "Thalis",
+ "Tanyr",
+ "Kara'li",
+ "Akarin",
+ "Denlur"

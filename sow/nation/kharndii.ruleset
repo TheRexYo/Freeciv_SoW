@@ -1,0 +1,49 @@
+[nation_kharndii]
+
+name=_("Kharndii")
+plural=_("?plural:Kharndiis")
+groups="Extended"
+legend=_("\
+The most successful barbarian empire ever to\
+ exist, the Kharndii were a ruthless force that\
+ travelled the world in massive hordes, taking\
+ everything in their path.\
+\n* Can use the 'horde' government.\
+\n* \
+")
+
+;Descended from Neph'ilim, so uses words descended from that dialect.
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Warlord %s"),        _("?female:Warlady %s")
+ "Horde",           _("Khar %s"),           _("Khar %s")
+ "Despotism",       _("Lord %s"),           _("Lady %s")
+ "Monarchy",        _("King %s"),           _("Queen %s")
+ "Fundamentalism",  _("Chosen %s"),         _("?female:Chosen %s")
+ "Republic",        _("Master %s"),         _("Master %s")
+}
+
+leaders = {
+ "name",              "sex"
+ "Arilla Zi'la",      "Male"
+ "Zalia Zi'tu",       "Female"
+}
+
+flag="barbarian"
+flag_alt = "-"
+style = "Asian"
+
+init_techs="The Horde"
+init_buildings=""
+init_units="Horde"
+init_gov="Horde"
+
+trait_expansionist = 0
+trait_trader       = 0
+trait_aggressive   = 100
+
+cities = 
+ "Kharn",
+ "Hun'si"
+ 
+; nothing more needed for barbarians

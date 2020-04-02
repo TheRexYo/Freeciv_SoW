@@ -1,0 +1,55 @@
+[nation_neph]
+
+name=_("Neph")
+plural=_("?plural:Neph")
+groups="Ancient", "Extended"
+legend=_("Long ago, all of man lived as part of a single, unified\
+ nation - the Neph Empire. The empire formed in response to\
+ threats from the other races, and ultimately proceeded to\
+ dominate the world with its incredible adaptability.\
+ Even the most advanced empires of the time could not\
+ compete - while an empire might surpass them in one\
+ way, the Neph would defeat them in all the others.\
+ In time, the all other races were assimilated,\
+ exterminated, or forced into hiding, leaving man\
+ as the sole ruler of Erath. With the threat eliminated,\
+ the Neph Empire began to diverge in purpose, until it finally\
+ collapsed.\
+\n* No anarchy period after government change.\
+\n* When this nation's cities are captured,\
+ they inspire partisans.\
+")
+leaders = {
+ "name",                        "sex"
+ "Angir, King Of Man",          "Male"
+ "Rala, Queen Of Man",          "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Chyeffe %s"),        _("?female:Chyeffe %s"); "Chief"
+ "Despotism",       _("Kanu %s"),           _("Kana %s"); "Lord / Lady"
+ "Monarchy",        _("Kinu %s"),           _("Qina %s"); "King / Queen"
+ "Fundamentalism",  _("Ayle-Rene %s"),      _("?female:Ayle-Rena %s"); "High-Priest"
+ "Republic",        _("Padu %s"),           _("Pada %s"); "Provider"
+}
+
+flag="england"
+flag_alt = "united_kingdom"
+style = "European"
+
+init_techs=""
+init_buildings=""
+init_units=""
+civilwar_nations = "aetherian", "imperian"
+
+cities =
+ "Alor",
+ "Nerai",
+ "Phorl",
+ "Dehsk",
+ "Fyrin"
+
+trait_expansionist = 50
+trait_trader       = 50
+trait_aggressive   = 50

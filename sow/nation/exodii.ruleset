@@ -1,0 +1,45 @@
+[nation_exodii]
+
+name=_("Exodii")
+plural=_("?plural:Exodii")
+groups="Event", "Core"
+legend=_("The Exodii are divine soldiers spoken of only\
+ in legend. Even the Neph empire dared not provoke their\
+ wrath, for one Exodii can take on twenty men! An army\
+ of Exodii is an unstoppable force, a deadly menace\
+ which no army can survive for long. Take care not to\
+ provoke the gods ire, or you may find yourself at\
+ death's door...\
+")
+
+leaders = {
+ "name",                        "sex"
+ "Exo, Champion of Primordius", "Male"
+ "Exodis, Blade of Judgement",  "Male"
+ "Exodin, Arrow of Balance",    "Male"
+ "Exodir, Fist of Wrath",       "Male"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("General %s"),      _("?female:General %s")
+ "Despotism",       _("General %s"),         _("General %s")
+ "Fundamentalism",  _("General %s"),         _("?female:General %s")
+ "Republic",        _("General %s"), _("General %s")
+}
+
+flag="england"
+flag_alt = "united_kingdom"
+style = "European"
+
+init_techs="Exodii Tech"
+init_buildings="Exodii Cloning Facility", "Exodii Production Facility"
+init_units="Exodii Drone"
+civilwar_nations = ""
+is_playable = false
+cities =
+ "Exon"
+
+trait_expansionist = 0
+trait_trader       = 0
+trait_aggressive   = 10000; Temporary (until declaring war via scripts is enabled).

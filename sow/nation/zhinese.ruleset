@@ -1,0 +1,47 @@
+[nation_zhinese]
+
+name=_("Zhinese")
+plural=_("?plural:Zhinese")
+groups="Ancient", "Core"
+legend=_("Proud descendants from the Neph'xilai,\
+ the Zhinese were a mighty empire that spanned\
+ almost half of Asar. Said to be the chosen of the\
+ Dragons, they were blessed with advanced knowledge\
+ for their time.\
+\n* 25% increased shield production.\
+")
+
+leaders = {
+ "name",                "sex"
+ "Xin'lu Zhari",        "Male"
+ "Mai'ta Lhing",        "Female"
+ "Yhan'i Tahr",         "Male"
+ "Dran'o Dar",          "Male"
+ "Lah'nga Dar",         "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",          "female_title"
+ "Despotism",       _("Jehu-Ehneru %s"),   _("?female:Jehu-Ehnera %s"); "God-Emperor / God-Empress"
+ "Monarchy",        _("Ehneru %s"),        _("?female:Ehnera %s"); "Emperor"
+}
+
+flag="han"
+flag_alt = "china"
+style = "Asian"
+
+init_techs="Masonry", "Alphabet"
+init_buildings=""
+init_units=""
+
+civilwar_nations=""
+
+trait_expansionist = 60
+trait_trader       = 60
+trait_aggressive   = 60
+
+cities =
+ "Dran-Lah'ng",
+ "Shi'dar",
+ "Xian'zin",
+ "Alxi'or"

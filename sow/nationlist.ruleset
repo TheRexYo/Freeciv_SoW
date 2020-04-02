@@ -1,0 +1,155 @@
+
+; Descriptions of nation sets
+; These are self-contained subsets of the available nations; one of these
+; can be chosen in pregame with the "nationset" option. No nations
+; outside the selected subset will be used.
+; The first set defined is the one that is used by default. It is mandatory
+; to have at least one, but if there is only one, it will be kept out of
+; the user`s way.
+; name 		= Translatable name of the set presented in the UI.
+; rule_name     = Unique persistent name; this is also visible to users as
+;                 the value of the "nationset" server option, and presented
+;                 in "/list nationsets". It should thus be short, in lower
+;                 case, and not contain spaces or punctuation.
+;                 The same saved "nationset" setting may be used for multiple
+;                 rulesets, so if your custom ruleset has any set which
+;                 contains all of its nations, it is useful to give it a
+;                 rule_name of "all" so that users can specify that they
+;                 always want the choice of all available nations by
+;                 default.
+; description   = Optional short user description of this set.
+
+[nset_core]
+name=_("?nationset:Core")
+rule_name="core"
+; /* TRANS: Description of 'Core' nation set in default rulesets.
+; If you have translated all of the nations in the extended set, not
+; just these core nations, feel free to discard the words about
+; localization, rather than translating literally. */
+description=_("\
+The default nations, properly balanced and tested.\
+ Useful for those looking for a fair game.\
+")
+[nset_extended]
+name=_("?nationset:Extended")
+rule_name="all"
+; /* TRANS: Description of the 'Extended' nation set in default rulesets,
+; which contains all nations that come with Freeciv.
+; If you have only translated the Core nations, replace this
+; description to say so rather than making it a literal translation.
+; Conversely, if you have translated everything, you can get rid of the
+; caveat about localization. */
+description=_("\
+All nations, not necessarily balanced.\
+ Useful for those looking for a diverse game.\
+")
+
+; Descriptions of nation groups
+; These are more cosmetic than sets; they affect the "pick nation" dialog,
+; random nation selection, and possibly ruleset behaviour.
+; It`s OK to not define any nation groups at all.
+; name 		= name of the group (used adjectivally)
+; hidden        = TRUE to not include this group in the "pick nation" dialog
+;                 (for instance if it`s for use in a NationGroup requirement).
+;                 Default FALSE.
+; match		= How much the AI will try to select a nation in the same
+;                 group
+;Time Periods
+[ngroup_ancient]
+name=_("?nationgroup:Ancient")
+match=2
+[ngroup_medieval]
+name=_("?nationgroup:Medieval")
+match=2
+[ngroup_earlymodern]
+name=_("?nationgroup:Early Modern")
+match=2
+[ngroup_modern]
+name=_("?nationgroup:Modern")
+match=1
+;Places
+[ngroup_skyworld]
+name=_("?nationgroup:Skyworld")
+match=2
+[ngroup_erath]
+name=_("?nationgroup:Erath")
+match=2
+;Races
+[ngroup_kth]
+name=_("?nationgroup:Kth")
+match=1
+[ngroup_human]
+name=_("?nationgroup:Human")
+match=1
+;Nation Types
+[ngroup_event]
+name=_("?nationgroup:Event")
+match=0
+hidden=true
+[ngroup_barbarian]
+name=_("?nationgroup:Barbarian")
+match=0
+hidden=true
+;Gameplay-Related
+[ngroup_lava_immune]
+name=_("?nationgroup:Lava Immune")
+match=0
+hidden=true
+[ngroup_acid_immune]
+name=_("?nationgroup:Acid Immune")
+match=0
+hidden=true
+[ngroup_wastes_immune]
+name=_("?nationgroup:Wastes Immune")
+match=0
+hidden=true
+[ngroup_verdant_bonus]
+name=_("?nationgroup:Verdant Bonus")
+match=0
+hidden=true
+[ngroup_hive]
+name=_("?nationgroup:Hive")
+match=0
+hidden=true
+[compatibility]
+
+; Compatibility: these nations are intended for use in a variety of
+; rulesets; declare which governments etc the nations may refer to, so that
+; nations referencing any of these can be loaded even in rulesets which
+; do not have some of them (if a referenced game identifier is not on these
+; lists, it will cause an error, to allow typos to be spotted)
+
+allowed_govs =
+  "Anarchy", "Despotism", "Monarchy", "Communism", "Fundamentalism",
+  "Republic", "Democracy", "Hive", "Horde"
+allowed_terrains =
+  "Lake", "Ocean", "Desert", "Forest", "Grassland", "Hills", "Jungle", "Lava Flats",
+  "Mountains", "Plains", "Swamp", "Tundra", "Glacier", "River", "Waste", "Verdant", "Blood Spires"
+allowed_styles =
+  "European", "Classical", "Tropical", "Asian", "Babylonian", "Celtic"
+
+; Every nation is a member of the "extended" set (no need to specify in
+; individual nation specs).
+default_nationset = "all"
+
+; Below: nations data loaded from ruleset files for
+; all nations available. If you want to have more
+; nations, just add the path to your ruleset to this list or
+; add them to local override/nation.ruleset included in the end.
+;
+; See doc/README.nations for information on how to
+; create nation rulesets, including style guidelines.
+
+*include "sow/nation/atlantean.ruleset"
+*include "sow/nation/imperian.ruleset"
+*include "sow/nation/kthii.ruleset"
+*include "sow/nation/mesyptian.ruleset"
+*include "sow/nation/noraskan.ruleset"
+*include "sow/nation/rhonan.ruleset"
+*include "sow/nation/skyfolk.ruleset"
+*include "sow/nation/wasteraider.ruleset"
+*include "sow/nation/zegrek.ruleset"
+*include "sow/nation/zhinese.ruleset"
+
+*include "sow/extendednationlist.ruleset"
+;Don't add or remove anything beneath this point!

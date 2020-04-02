@@ -1,0 +1,50 @@
+[nation_kthii]
+
+name=_("Kth'ii")
+plural=_("?plural:Kth'ii")
+groups="Medieval", "Core", "Kth", "Lava Immune"
+legend=_("\
+The Kth'ii are a vicious Kth tribe renowned\
+ for its aggressive tendecies and preference\
+ of volcanic terrain. While most other Kth\
+ were subjugated by the Wasteraiders, the\
+ Kth'ii managed to escape that fate by\
+ living where they couldn't follow.\
+ Time and time again, they would strike out\
+ at their ancient enemy - vowing that, someday\
+ they would achieve freedom for all of\ 
+ their kin.\
+ \n* Immune to the HP-Draining effects of Lava.\
+")
+
+leaders = {
+ "name",                        "sex"
+ "Tza'tlk",                     "Male"
+ "Lk'tli'tl",                   "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title", "female_title"
+ "Anarchy",         _("Kt'l %s"), _("?female:Kt'l %s")
+ "Despotism",       _("Kt'l %s"), _("Kt'l %s")
+ "Fundamentalism",  _("Kt'l %s"), _("?female:Kt'l %s")
+ "Republic",        _("Kt'l %s"), _("Kt'l %s")
+}
+
+flag="kth"
+flag_alt = "united_kingdom"
+style = "tropical"
+
+init_techs="Animal Husbandry"
+init_buildings=""
+init_units=""
+civilwar_nations = "kth"
+
+cities =
+ "Xin'tyk",
+ "Tkri'li",
+ "Xel'iti",
+ "Drii'ti"
+trait_expansionist = 50
+trait_trader       = 0
+trait_aggressive   = 100

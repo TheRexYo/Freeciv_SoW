@@ -1,0 +1,45 @@
+[nation_arcania]
+
+name=_("Arcanian")
+plural=_("?plural:Arcanians")
+groups="Ancient", "Erath", "Extended"
+legend=_("The Arcanians are one of many Zegrek sub-nations. They were separated from their peers\
+by their extensive study of magic and the natural world.\
+\n* Can create 'Arcanian Forest' improvement, boosting tile production of Forest Tiles within cities.\
+\n* Can build the unique 'Arcanian Phalanx' unit, which can ignore tile movement penalties.\
+")
+
+
+leaders = {
+ "name",                        "sex"
+ "Lyzion",                      "Male"
+ "Czylle",                      "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Chief %s"),      _("?female:Chief %s")
+ "Despotism",       _("King %s"),         _("Queen %s")
+ "Fundamentalism",  _("High-Priest %s"),         _("?female:High-Priestess %s")
+ "Republic",        _("President %s"), _("President %s")
+}
+
+flag="greece_ancient"
+flag_alt = "england"
+style = "Classical"
+
+init_techs=""
+init_buildings="Arcanian Forest"
+init_units=""
+civilwar_nations = ""
+
+trait_expansionist = 35
+trait_trader       = 65
+trait_aggressive   = 50
+
+cities =
+ "Mantaria",
+ "Tehgaia",
+ "Orchenos",
+ "Tethyn",
+ "Kapheae"

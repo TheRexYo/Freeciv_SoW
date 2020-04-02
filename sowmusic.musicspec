@@ -1,0 +1,48 @@
+[musicspec]
+; Format and options of this spec file:
+options = "+Freeciv-2.6-musicset"
+
+[info]
+artists = "\
+"
+
+[files]
+music_menu = "stdmusic/CullamBruce-Lockhart--Dawning_Fanfare.ogg"
+;music_victory = stdmusic/"Soaring_High.ogg"
+;music_defeat = "stdmusic/Progressive_Moments.ogg"
+music_skyfolk_peace = "sowmusic/The Last Cry For Peace.ogg"
+music_skyfolk_combat = "sow/Warborn.ogg"
+music_anarchy_peace = "stdmusic/Gaia_in_Fog.ogg"
+music_anarchy_combat = "stdmusic/Apocalypse.ogg"
+music_tribal_peace = "stdmusic/Island_Coconuts.ogg"
+music_tribal_combat = "stdmusic/Tribal_Affair.ogg"
+music_despotism_peace = "stdmusic/Breathing_Planet.ogg"
+music_despotism_combat = "stdmusic/The_Bronx_is_Burning.ogg"
+music_monarchy_peace = "stdmusic/Peaceful_Conclusion.ogg"
+music_monarchy_combat = "stdmusic/King_s_Men.ogg"
+music_fundamentalist_peace = "stdmusic/A_Revelation.ogg"
+music_fundamentalist_combat = "stdmusic/Realization.ogg"
+music_republic_peace = "stdmusic/Progressive_Moments.ogg"
+music_republic_combat = "stdmusic/Fallen_Soldier.ogg"
+music_exodii_event_peace = "stdmusic/Meteor.ogg"
+music_exodii_event_war = "stdmusic/Thunderstorm.ogg"
+music_hive_peace = "stdmusic/Creek.ogg"
+music_hive_combat = "stdmusic/Subtle_Betrayal.ogg"
+music_horde_peace = "stdmusic/At_Odds.ogg"
+music_horde_combat = "stdmusic/Action_Time.ogg"
+music_longing_peace = "stdmusic/Reconciliation.ogg"
+music_longing_war = "stdmusic/The_Heartache.ogg"
+music_optimistic_peace = "stdmusic/Rolling_Hills.ogg"
+music_optimistic_war = "stdmusic/A_Tale_of_Vengeance.ogg"
+
+music_renaissance_peace = "Rolling_Hills"
+music_renaissance_combat = "At_Odds"
+music_industrial_peace = "Building_Blocks"
+music_industrial_combat = "At_Odds"
+music_electricage_peace = "Soaring_High"
+music_electricage_combat = "Action_Time"
+music_modern_peace = "Sunn_Forest"
+music_modern_combat = "Action_Time"
+music_postmodern_peace = "Sunn_Forest"
+music_postmodern_combat = "Action_Time"
+

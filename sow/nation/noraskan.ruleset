@@ -1,0 +1,44 @@
+[nation_noraskan]
+
+name=_("Noraskan")
+plural=_("?plural:Noraskans")
+groups="Medieval", "Core"
+legend=_("After the division of the Neph'ilim, a small group of exiles left for the frozen north, where they formed a nation of raiders and settlers.\
+ For many decades, they terrorized the southern empires until the nation mysteriously fell some centuries after its founding. To this day, no one knows why. However, a\
+ number of people claiming to be survivors from the empire have told scholars what they say is the reason it fell. Most speak of an underwater empire rising from the seas to\
+ invade their territory, leading to a massive war in which the Noraskan King was slain and his empire subsequently disbanded. Of course, these are just stories, and no\
+ evidence has surfaced to support this claim, either.\
+")
+
+leaders = {
+ "name",                "sex"
+ "Leone Arulson",       "Male"
+ "Fyri Lorgynson",      "Female"
+}
+
+ruler_titles = {
+ "government",   "male_title",           "female_title"
+ "Despotism",    _("Earl %s"),           _("?female:Earl %s")
+}
+
+flag="viking"
+flag_alt="norway"
+style = "European"
+
+init_techs="Seafaring"
+init_buildings=""
+init_units=""
+
+trait_expansionist = 60
+trait_trader       = 20
+trait_aggressive   = 70
+
+civilwar_nations= ""
+cities =
+ "Norascant",
+ "Delmdurheim",
+ "Frigilund",
+ "Arundun",
+ "Sordul",
+ "Darlondam",
+ "Ferror"

@@ -1,0 +1,56 @@
+[nation_wasteraider]
+
+name=_("Wasteraider")
+plural=_("?plural:Wasteraiders")
+groups="Medieval", "Early Modern", "Wastes Immune", "Core"
+legend=_("The Wasteraider Empire was created in death.
+ The Skyfolk Empire, who also descended from the 
+ Aetherians, had slowly driven them into the Wastes,
+ forcing them into starvation and pestilence. Since then,
+ many leaders have arisen to lead the nation into a new, 
+ better era where they can be free from their hellish
+ prison. With all the knowledge they gained from their 
+ time in the Wastes, the Wasteraiders are capable of 
+ building war machines with power unrivalled among all 
+ the nations of the world.
+\n* Immune to the HP-Draining effects of the wastes.\
+\n* 25% increased production.\
+\n* 25% increased pollution.\
+")
+
+leaders = {
+ "name",                        "sex"
+ "Luna Nym, Lady Of Death",     "Female"
+ "Tyrannia Nym",                "Female" ; a.k.a. "The Warrior-Queen"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Chief %s"),      _("?female:Chief %s")
+ "Despotism",       _("Lord %s"),         _("Lady %s")
+ "Fundamentalism",  _("Leader %s"),         _("?female:Leader %s")
+ "Republic",        _("High-Minister %s"), _("High-Mistress %s")
+}
+
+flag="england"
+flag_alt = "united_kingdom"
+style = "European"
+
+init_techs=""
+init_buildings=""
+init_units=""
+civilwar_nations = "aetherian"
+
+trait_expansionist = 75
+trait_trader       = 25
+trait_aggressive   = 100
+
+cities =
+ "Ensdael",
+ "Nightsend",
+ "Moonsilver",
+ "Lithia",
+ "Necraea",
+ "Hadea",
+ "Physel",
+ "Naelor"

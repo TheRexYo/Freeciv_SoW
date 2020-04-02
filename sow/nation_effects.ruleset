@@ -1,0 +1,162 @@
+; This is SOW nation specific effects ruleset.
+
+; Modifying this file:
+; You should not modify this file except to make bugfixes or
+; for other "maintenance".  If you want to make custom changes,
+; you should create a new datadir subdirectory and copy this file
+; into that directory, and then modify that copy.  Then use the
+; command "rulesetdir <mysubdir>" in the server to have freeciv
+; use your new customized file.
+
+; Note that the freeciv AI may not cope well with anything more
+; than minor changes.
+
+[effect_kharndii_1]
+type    = "Martial_Law_Max"
+value   = 3
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Kharndii", "Player"
+    }
+
+[effect_imperian_1]
+type    = "Empire_Size_Step"
+value   = 0
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Imperian", "Player"
+    }
+
+[effect_imperian_2]
+type    = "Empire_Size_Base"
+value   = 0
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Imperian", "Player"
+    }
+	
+[effect_imperian_3]
+type    = "Size_Adj"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Imperian", "Player"
+    }
+
+[effect_neph_1]
+type    = "No_Anarchy"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Neph", "Player"
+    }
+
+[effect_neph_2]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Nation", "Neph", "Player", TRUE
+    }
+
+[effect_mesyptian_1]
+type    = "Upkeep_Free"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Mesyptian", "Player"
+    }
+
+[effect_aetherian]
+type    = "Rapture_Grow"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Aetherian", "Player"
+    }
+
+[effect_skyfolk]
+type    = "Pollu_Pop_Pct"
+value   = -25
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Skyfolk", "Player"
+    }
+
+[effect_wasteraider_1]
+type    = "Pollu_Pop_Pct"
+value   = 25
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Wasteraider", "Player"
+    }
+
+[effect_wasteraider_2]
+type    = "Output_Bonus"
+value   = 25
+reqs    =
+    { "type", "name", "range", "present"
+      "Nation", "Wasteraider", "Player", TRUE
+	  "OutputType", "Science", "Local", FALSE
+    }
+
+[effect_zhinese_1]
+type    = "Output_Bonus"
+value   = 25
+reqs    =
+    { "type", "name", "range", "present"
+      "Nation", "Zhinese", "Player", TRUE
+	  "OutputType", "Shield", "Local", TRUE
+    }
+	
+;OPINIONS
+[effect_atlantean_opinion]
+type    = "Gain_AI_Love"
+value   = -2
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Atlantean", "Player"
+    }
+	
+[effect_kthii_opinion]
+type    = "Gain_AI_Love"
+value   = -2
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Kth'ii", "Player"
+    }
+
+[effect_rhonan_opinion]
+type    = "Gain_AI_Love"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Rhonan", "Player"
+    }
+	
+[effect_zhinese_opinion]
+type    = "Gain_AI_Love"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Zhinese", "Player"
+    }
+	
+[effect_wasteraider_opinion]
+type    = "Gain_AI_Love"
+value   = -5
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Wasteraider", "Player"
+    }
+
+[effect_skyfolk_opinion]
+type    = "Gain_AI_Love"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+      "Nation", "Skyfolk", "Player"
+    }
+
+
+;Do not change anything beyond this point.

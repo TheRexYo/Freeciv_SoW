@@ -1,0 +1,45 @@
+[nation_kth]
+
+name=_("Kth")
+plural=_("?plural:Kth")
+groups="Ancient", "Extended", "Kth", "Lava Immune", "Hive"
+legend=_("\
+The Kth are a race of intelligent insectoids that have\
+ long warred with humanity. They are known for their\
+ ruthless aggression and powerful insectoid cavalry.\
+\n* Immune to the HP-Draining effects of Lava.\
+")
+
+leaders = {
+ "name",                        "sex"
+ "Tk'ti'ka",                    "Male"
+ "Xc'xi'xali",                  "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Kt'l %s"),      _("?female:Kt'l %s"); "Leader"
+ "Despotism",       _("Kt'l %s"),         _("Kt'l %s"); "Leader"
+ "Fundamentalism",  _("Kt'l %s"),         _("?female:Kt'l %s"); "Leader"
+ "Republic",        _("Kt'l %s"), _("Kt'l %s"); "Leader"
+}
+
+flag="kth"
+flag_alt = "england"
+style = "tropical"
+
+init_techs=""
+init_buildings=""
+init_units=""
+civilwar_nations = "kth'ii", "kth'aa"
+
+cities =
+ "Ti'xi",
+ "Pi'kr",
+ "Tk'zn",
+ "Alm'zsk",
+ "Tm'yk"
+
+trait_expansionist = 100
+trait_trader       = 0
+trait_aggressive   = 100

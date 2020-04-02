@@ -1,0 +1,50 @@
+[nation_mesyptian]
+
+name=_("Mesyptian")
+plural=_("?plural:Mesyptians")
+groups="Ancient", "Core"
+legend=_("Among the first of the empires to divide from the Neph'ilim empire,\
+ the Mesyptians were one of the strongest empires of the time. Reigning uncontested in\
+ their home region for nearly a millenia, they were incredibly successful. Utilizing\
+ unparalleled building efficiency, they crafted the Nephaliths with sheer man-power and\
+ intense calculation. With the construction of this wonder complete, barbarians\
+ from a nearby land began to envy their success, and decided to destroy the empire,\
+ once and for all. Rather brilliantly, the barbarians used the Mesyptian's own caste-system\
+ against them by inciting rebellion amongst the empire's discontent slaves. In under a year,\
+ centuries of success was undone by pure, unrestrained bloodshed...\
+")
+
+leaders = {
+ "name",                "sex"
+ "Tekhmet Thamyr",      "Male"
+ "Mesypti Thamyr",      "Female"
+ "Zhendan Oclimher",    "Male"
+ "Cheriatra Phykhamet", "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",          "female_title"
+ "Anarchy",         _("Husur %s"),         _("?female:Husur %s"); "Usurper"
+ "Despotism",       _("Dehu-Pharah %s"),   _("?female:Dehu-Pharah %s"); "God-Pharaoh"
+ "Monarchy",        _("Pharah %s"),        _("?female:Pharah %s"); "Pharaoh"
+}
+
+flag="egypt_ancient"
+flag_alt = "egypt"
+style = "Babylonian"
+
+init_techs="Masonry"
+init_buildings="Mesyptian Slave Hut"
+init_units=""
+
+civilwar_nations=""
+
+trait_expansionist = 40
+trait_trader       = 60
+trait_aggressive   = 50
+
+cities =
+ "Mesyptia",
+ "Tekhmen",
+ "Zhendar",
+ "Phykhamet"

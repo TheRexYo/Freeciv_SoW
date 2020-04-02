@@ -1,0 +1,5 @@
+# Server commands to make Civ2Civ3 Freeciv rules
+#
+
+rulesetdir sow
+set topology "WRAPX|WRAPY|ISO"

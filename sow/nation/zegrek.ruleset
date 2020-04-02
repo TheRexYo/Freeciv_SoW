@@ -1,0 +1,42 @@
+[nation_zegrek]
+
+name=_("Zegrek")
+plural=_("?plural:Zegreks")
+groups="Ancient", "Erath", "Core"
+legend=_("United, the Zegrek city-states were one of the most powerful nations to ever exist.\
+ Their military advances were so great they could best any foe in straight combat. Though each\
+ mini-nation was small, together, they could defeat anything.\
+\n* Can create 'Zegrek Garrison' improvement, allowing the city to inspire Partisan units.\
+\n* Can build the unique 'Zegrek Phalanx' unit, which possesses increased defense.\
+")
+
+
+leaders = {
+ "name",                        "sex"
+ "Alandis",                      "Male"
+ "Lydia",                        "Female"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Betrayer %s"),      _("?female:Betrayer %s")
+ "Despotism",       _("King %s"),         _("Queen %s")
+ "Fundamentalism",  _("High-Priest %s"),         _("?female:High-Priestess %s")
+ "Republic",        _("President %s"), _("President %s")
+}
+
+flag="greece_ancient"
+flag_alt = "england"
+style = "Classical"
+
+init_techs=""
+init_buildings="Zegrek Garrison"
+init_units=""
+civilwar_nations = "Arcanian"
+
+trait_expansionist = 35
+trait_trader       = 65
+trait_aggressive   = 65
+
+cities =
+ "Zegris"

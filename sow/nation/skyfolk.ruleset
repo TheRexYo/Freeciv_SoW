@@ -1,0 +1,50 @@
+[nation_skyfolk]
+
+name=_("Skyfolk")
+plural=_("?plural:Skyfolk")
+groups="Medieval", "Early Modern", "Erath", "Core"
+legend=_("The Skyfolk first set foot upon the Skyworld some 5000 BDR.
+ Since then, they expanded into a mighty empire to rival all other
+ nations. Many have been Chosen by Genesis to lead them, and their
+ strength remains uncontested on the Skyworld. The Skyfolk are the 
+ only medieval empire to possess an aerial division in their 
+ military, giving them a huge advantage over their foes.
+\n* 25% reduced population pollution.\
+\n* Regenerate 25% HP while in verdant terrain instead of the usual 10%.\
+")
+
+leaders = {
+ "name",                        "sex"
+ "Sun Alar, Son Of War",        "Male"
+ "Draco Alar",                  "Male" ; a.k.a. "Draco, The Soldier-King"
+}
+
+ruler_titles = {
+ "government",      "male_title",           "female_title"
+ "Anarchy",         _("Chyfe %s"),           _("?female:Chyfa %s"); "Chief"
+ "Despotism",       _("Kin-Daere %s"),       _("Kin-Daera %s"); "Lord-Chosen"
+ "Fundamentalism",  _("Aeri-Renere %s"),     _("?female:Aeri-Renera %s"); "High-Priest / High-Priestess"
+ "Republic",        _("Daere %s"),           _("Daera %s"); "Chosen"
+}
+
+flag="england"
+flag_alt = "united_kingdom"
+style = "European"
+
+init_techs=""
+init_buildings=""
+init_units=""
+civilwar_nations = "aetherian"
+
+trait_expansionist = 75
+trait_trader       = 100
+trait_aggressive   = 25
+
+cities =
+ "Chamera",
+ "Aethil",
+ "Tilford",
+ "Tylaendal",
+ "Zylor",
+ "Yaelath",
+ "Darnor"

@@ -1,0 +1,7 @@
+[compatibility]
+*include "sow/nation/aetherian.ruleset"
+*include "sow/nation/arcanian.ruleset"
+*include "sow/nation/jharappe.ruleset"
+*include "sow/nation/kharndii.ruleset"
+*include "sow/nation/kth.ruleset"
+*include "sow/nation/neph.ruleset"
